@@ -1,0 +1,1415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft fxcop 10.0\Xml\FxCopReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Namespaces>
+  <Namespace Name="WinAPI">
+   <Messages>
+    <Message Id="API" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="85" Level="Error">Correct the casing of 'API' in namespace name 'WinAPI' by changing it to 'Api'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="Z:\Documents\Coding Projects\WinAPI\WinAPI\bin\Debug\WinAPI.exe">
+   <Modules>
+    <Module Name="winapi.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'WinAPI.exe' with a strong name key.</Issue>
+      </Message>
+      <Message Id="API" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="85" Level="Error">Correct the casing of 'API' in assembly name 'WinAPI.exe' by changing it to 'Api'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'WinAPI.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="WinAPI">
+       <Types>
+        <Type Name="COMMCONFIG" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="COMMCONFIG" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'COMMCONFIG' in type name 'COMMCONFIG' by changing it to 'Commconfig'.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'COMMCONFIG' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'COMMCONFIG' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#dcb" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.dcb' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="dcb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'dcb' in member name 'COMMCONFIG.dcb' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dwProviderOffsert" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.dwProviderOffsert' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Offsert" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Offsert' in member name 'COMMCONFIG.dwProviderOffsert' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="dw" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'dw' in member name 'COMMCONFIG.dwProviderOffsert' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dwProviderSize" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.dwProviderSize' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="dw" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'dw' in member name 'COMMCONFIG.dwProviderSize' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dwProviderSubType" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="SubType" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'SubType' in member name 'COMMCONFIG.dwProviderSubType' exists as a discrete term. If your usage is intended to be single word, case it as 'Subtype' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.dwProviderSubType' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="dw" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'dw' in member name 'COMMCONFIG.dwProviderSubType' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dwSize" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.dwSize' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="dw" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'dw' in member name 'COMMCONFIG.dwSize' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#wcProviderDate" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.wcProviderDate' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#wReserved" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.wReserved' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#wVersion" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMCONFIG.wVersion' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="COMMTIMEOUTS" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="COMMTIMEOUTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'COMMTIMEOUTS' in type name 'COMMTIMEOUTS' by changing it to 'Commtimeouts'.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'COMMTIMEOUTS' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'COMMTIMEOUTS' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ReadIntervalTimeout" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMTIMEOUTS.ReadIntervalTimeout' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadTotalTimeoutConstant" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMTIMEOUTS.ReadTotalTimeoutConstant' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadTotalTimeoutMultiplier" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMTIMEOUTS.ReadTotalTimeoutMultiplier' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteTotalTimeoutConstant" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMTIMEOUTS.WriteTotalTimeoutConstant' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteTotalTimeoutMultiplier" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'COMMTIMEOUTS.WriteTotalTimeoutMultiplier' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CopyFileFlags" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="NotIntegral" Certainty="60" Level="Warning">If possible, make the underlying type of 'CopyFileFlags' Int32 instead of 'uint'. Otherwise consider Byte, Int16, or Int64.</Issue>
+          </Message>
+          <Message Id="Flags" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="TypeNoAlternate" Certainty="95" Level="Error">Replace the term 'Flags' in type name 'CopyFileFlags' with an appropriate alternate or remove it entirely.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#COPY_FILE_ALLOW_DECRYPTED_DESTINATION" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ALLOW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ALLOW' in member name 'CopyFileFlags.COPY_FILE_ALLOW_DECRYPTED_DESTINATION' by changing it to 'Allow'.</Issue>
+            </Message>
+            <Message Id="COPY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'COPY' in member name 'CopyFileFlags.COPY_FILE_ALLOW_DECRYPTED_DESTINATION' by changing it to 'Copy'.</Issue>
+            </Message>
+            <Message Id="DECRYPTED" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DECRYPTED' in member name 'CopyFileFlags.COPY_FILE_ALLOW_DECRYPTED_DESTINATION' by changing it to 'Decrypted'.</Issue>
+            </Message>
+            <Message Id="DESTINATION" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'DESTINATION' in member name 'CopyFileFlags.COPY_FILE_ALLOW_DECRYPTED_DESTINATION' by changing it to 'Destination'.</Issue>
+            </Message>
+            <Message Id="FILE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILE' in member name 'CopyFileFlags.COPY_FILE_ALLOW_DECRYPTED_DESTINATION' by changing it to 'File'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyFileFlags.COPY_FILE_ALLOW_DECRYPTED_DESTINATION'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COPY_FILE_COPY_SYMLINK" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="COPY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'COPY' in member name 'CopyFileFlags.COPY_FILE_COPY_SYMLINK' by changing it to 'Copy'.</Issue>
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'COPY' in member name 'CopyFileFlags.COPY_FILE_COPY_SYMLINK' by changing it to 'Copy'.</Issue>
+            </Message>
+            <Message Id="FILE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILE' in member name 'CopyFileFlags.COPY_FILE_COPY_SYMLINK' by changing it to 'File'.</Issue>
+            </Message>
+            <Message Id="SYMLINK" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SYMLINK' in member name 'CopyFileFlags.COPY_FILE_COPY_SYMLINK' by changing it to 'Symlink'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyFileFlags.COPY_FILE_COPY_SYMLINK'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COPY_FILE_FAIL_IF_EXISTS" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="COPY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'COPY' in member name 'CopyFileFlags.COPY_FILE_FAIL_IF_EXISTS' by changing it to 'Copy'.</Issue>
+            </Message>
+            <Message Id="EXISTS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'EXISTS' in member name 'CopyFileFlags.COPY_FILE_FAIL_IF_EXISTS' by changing it to 'Exists'.</Issue>
+            </Message>
+            <Message Id="FAIL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FAIL' in member name 'CopyFileFlags.COPY_FILE_FAIL_IF_EXISTS' by changing it to 'Fail'.</Issue>
+            </Message>
+            <Message Id="FILE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILE' in member name 'CopyFileFlags.COPY_FILE_FAIL_IF_EXISTS' by changing it to 'File'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyFileFlags.COPY_FILE_FAIL_IF_EXISTS'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COPY_FILE_OPEN_SOURCE_FOR_WRITE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="COPY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'COPY' in member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE' by changing it to 'Copy'.</Issue>
+            </Message>
+            <Message Id="FILE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILE' in member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE' by changing it to 'File'.</Issue>
+            </Message>
+            <Message Id="FOR" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FOR' in member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE' by changing it to 'For'.</Issue>
+            </Message>
+            <Message Id="OPEN" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'OPEN' in member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE' by changing it to 'Open'.</Issue>
+            </Message>
+            <Message Id="SOURCE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SOURCE' in member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE' by changing it to 'Source'.</Issue>
+            </Message>
+            <Message Id="WRITE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'WRITE' in member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE' by changing it to 'Write'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyFileFlags.COPY_FILE_OPEN_SOURCE_FOR_WRITE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COPY_FILE_RESTARTABLE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="COPY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'COPY' in member name 'CopyFileFlags.COPY_FILE_RESTARTABLE' by changing it to 'Copy'.</Issue>
+            </Message>
+            <Message Id="FILE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FILE' in member name 'CopyFileFlags.COPY_FILE_RESTARTABLE' by changing it to 'File'.</Issue>
+            </Message>
+            <Message Id="RESTARTABLE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'RESTARTABLE' in member name 'CopyFileFlags.COPY_FILE_RESTARTABLE' by changing it to 'Restartable'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyFileFlags.COPY_FILE_RESTARTABLE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CopyProgressCallbackReason" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="NotIntegral" Certainty="60" Level="Warning">If possible, make the underlying type of 'CopyProgressCallbackReason' Int32 instead of 'uint'. Otherwise consider Byte, Int16, or Int64.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CALLBACK_CHUNK_FINISHED" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CALLBACK" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CALLBACK' in member name 'CopyProgressCallbackReason.CALLBACK_CHUNK_FINISHED' by changing it to 'Callback'.</Issue>
+            </Message>
+            <Message Id="CHUNK" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CHUNK' in member name 'CopyProgressCallbackReason.CALLBACK_CHUNK_FINISHED' by changing it to 'Chunk'.</Issue>
+            </Message>
+            <Message Id="FINISHED" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FINISHED' in member name 'CopyProgressCallbackReason.CALLBACK_CHUNK_FINISHED' by changing it to 'Finished'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyProgressCallbackReason.CALLBACK_CHUNK_FINISHED'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CALLBACK_STREAM_SWITCH" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CALLBACK" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CALLBACK' in member name 'CopyProgressCallbackReason.CALLBACK_STREAM_SWITCH' by changing it to 'Callback'.</Issue>
+            </Message>
+            <Message Id="STREAM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'STREAM' in member name 'CopyProgressCallbackReason.CALLBACK_STREAM_SWITCH' by changing it to 'Stream'.</Issue>
+            </Message>
+            <Message Id="SWITCH" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'SWITCH' in member name 'CopyProgressCallbackReason.CALLBACK_STREAM_SWITCH' by changing it to 'Switch'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyProgressCallbackReason.CALLBACK_STREAM_SWITCH'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CopyProgressResult" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="NotIntegral" Certainty="60" Level="Warning">If possible, make the underlying type of 'CopyProgressResult' Int32 instead of 'uint'. Otherwise consider Byte, Int16, or Int64.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#PROGRESS_CANCEL" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CANCEL" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CANCEL' in member name 'CopyProgressResult.PROGRESS_CANCEL' by changing it to 'Cancel'.</Issue>
+            </Message>
+            <Message Id="PROGRESS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'PROGRESS' in member name 'CopyProgressResult.PROGRESS_CANCEL' by changing it to 'Progress'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyProgressResult.PROGRESS_CANCEL'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PROGRESS_CONTINUE" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="CONTINUE" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'CONTINUE' in member name 'CopyProgressResult.PROGRESS_CONTINUE' by changing it to 'Continue'.</Issue>
+            </Message>
+            <Message Id="PROGRESS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'PROGRESS' in member name 'CopyProgressResult.PROGRESS_CONTINUE' by changing it to 'Progress'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyProgressResult.PROGRESS_CONTINUE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PROGRESS_QUIET" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PROGRESS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'PROGRESS' in member name 'CopyProgressResult.PROGRESS_QUIET' by changing it to 'Progress'.</Issue>
+            </Message>
+            <Message Id="QUIET" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'QUIET' in member name 'CopyProgressResult.PROGRESS_QUIET' by changing it to 'Quiet'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyProgressResult.PROGRESS_QUIET'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PROGRESS_STOP" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PROGRESS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'PROGRESS' in member name 'CopyProgressResult.PROGRESS_STOP' by changing it to 'Progress'.</Issue>
+            </Message>
+            <Message Id="STOP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'STOP' in member name 'CopyProgressResult.PROGRESS_STOP' by changing it to 'Stop'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'CopyProgressResult.PROGRESS_STOP'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DCB" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="DCB" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'DCB' in type name 'DCB' by changing it to 'Dcb'.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'DCB' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'DCB' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.cctor()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="InitializeValueTypeStaticFieldsInline" Category="Microsoft.Usage" CheckId="CA2207" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="52">Initialize all static fields in 'DCB' when those fields are declared and remove the explicit static constructor.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BaudRate" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.BaudRate' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ByteSize" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.ByteSize' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DCBLength" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.DCBLength' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DsrSensitivity" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dsr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="120">Correct the spelling of 'Dsr' in member name 'DCB.DsrSensitivity' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DtrControl" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dtr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="114">Correct the spelling of 'Dtr' in member name 'DCB.DtrControl' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EofChar" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.EofChar' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Eof" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Eof' in member name 'DCB.EofChar' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ErrorChar" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.ErrorChar' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EvtChar" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.EvtChar' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Evt" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Evt' in member name 'DCB.EvtChar' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OutxCtsFlow" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Outx" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="102">Correct the spelling of 'Outx' in member name 'DCB.OutxCtsFlow' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OutxDsrFlow" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dsr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="108">Correct the spelling of 'Dsr' in member name 'DCB.OutxDsrFlow' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Outx" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="108">Correct the spelling of 'Outx' in member name 'DCB.OutxDsrFlow' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Parity" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.Parity' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RtsControl" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Rts" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="156">Correct the spelling of 'Rts' in member name 'DCB.RtsControl' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StopBits" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.StopBits' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TxContinueOnXoff" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Tx" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="126">Correct the casing of 'Tx' in member name 'DCB.TxContinueOnXoff' by changing it to 'TX'.</Issue>
+            </Message>
+            <Message Id="Xoff" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="DCBStructure.cs" Line="126">Correct the spelling of 'Xoff' in member name 'DCB.TxContinueOnXoff' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#XoffChar" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.XoffChar' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Xoff" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Xoff' in member name 'DCB.XoffChar' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#XoffLim" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.XoffLim' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Xoff" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Xoff' in member name 'DCB.XoffLim' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#XonChar" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.XonChar' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Xon" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Xon' in member name 'DCB.XonChar' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#XonLim" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'DCB.XonLim' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message Id="Xon" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Xon' in member name 'DCB.XonLim' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DtrControl" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Dtr" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dtr' in type name 'DtrControl'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ERRORS" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+           <Issue Name="NotFlagsNoZeroValue" Certainty="95" Level="CriticalError">Add a member to 'ERRORS' that has a value of zero with a suggested name of 'None'.</Issue>
+          </Message>
+          <Message Id="ERRORS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'ERRORS' in type name 'ERRORS' by changing it to 'Errors'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FileMapProtection" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="NotIntegral" Certainty="60" Level="Warning">If possible, make the underlying type of 'FileMapProtection' Int32 instead of 'uint'. Otherwise consider Byte, Int16, or Int64.</Issue>
+          </Message>
+          <Message TypeName="FlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1714" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If enumeration name 'FileMapProtection' is singular, change it to a plural form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#PageReadonly" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Readonly" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeCompoundWord" Certainty="80" Level="Error">The discrete term 'Readonly' in member name 'FileMapProtection.PageReadonly' should be expressed as a compound word, 'ReadOnly'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FILETIME" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="FILETIME" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'FILETIME' in type name 'FILETIME' by changing it to 'Filetime'.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'FILETIME' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'FILETIME' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DateTimeHigh" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FILETIME.DateTimeHigh' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DateTimeLow" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'FILETIME.DateTimeLow' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Parity" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="NotInt32" Certainty="60" Level="Warning">If possible, make the underlying type of 'Parity' System.Int32 instead of 'byte'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Error">Because type 'Program' contains only 'static' ('Shared' in Visual Basic) members, add a default private constructor to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="z:\Documents\Coding Projects\WinAPI\WinAPI" File="Program.cs" Line="20">Parameter 'args' of 'Program.Main(string[])' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RtsControl" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Rts" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Rts' in type name 'RtsControl'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SECURITY_ATTRIBUTES" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="ATTRIBUTES" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'ATTRIBUTES' in type name 'SECURITY_ATTRIBUTES' by changing it to 'Attributes'.</Issue>
+          </Message>
+          <Message Id="SECURITY" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'SECURITY' in type name 'SECURITY_ATTRIBUTES' by changing it to 'Security'.</Issue>
+          </Message>
+          <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Remove the underscores from type name 'SECURITY_ATTRIBUTES'.</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'SECURITY_ATTRIBUTES' should override Equals.</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'SECURITY_ATTRIBUTES' should override the equality (==) and inequality (!=) operators.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#bInheritHandle" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'SECURITY_ATTRIBUTES.bInheritHandle' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lpSecurityDescriptor" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'SECURITY_ATTRIBUTES.lpSecurityDescriptor' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">Make 'SECURITY_ATTRIBUTES.lpSecurityDescriptor' private.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#nLength" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'SECURITY_ATTRIBUTES.nLength' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StopBits" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Name="NotInt32" Certainty="60" Level="Warning">If possible, make the underlying type of 'StopBits' System.Int32 instead of 'byte'.</Issue>
+          </Message>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'StopBits' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="WinAPI.Kernel">
+       <Types>
+        <Type Name="NativeMethods" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#AddAtom(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.AddAtom(string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpstring' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AllocConsole()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.AllocConsole()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AreFileApisANSI()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.AreFileApisANSI()' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.AreFileApisANSI()'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AssignProcessToJobObject(System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.AssignProcessToJobObject(IntPtr, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackupRead(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32&amp;,System.Boolean,System.Boolean,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.BackupRead(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bAbort' of P/Invoke 'NativeMethods.BackupRead(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bProcessSecurity' of P/Invoke 'NativeMethods.BackupRead(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.BackupRead(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackupSeek(System.IntPtr,System.UInt32,System.UInt32,System.UInt32&amp;,System.UInt32&amp;,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.BackupSeek(IntPtr, uint, uint, out uint, out uint, ref IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.BackupSeek(IntPtr, uint, uint, out uint, out uint, ref IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BackuWrite(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32&amp;,System.Boolean,System.Boolean,System.IntPtr&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.BackuWrite(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bAbort' of P/Invoke 'NativeMethods.BackuWrite(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bProcessSecurity' of P/Invoke 'NativeMethods.BackuWrite(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.BackuWrite(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message TypeName="PInvokeEntryPointsShouldExist" Category="Microsoft.Interoperability" CheckId="CA1400" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="50" Level="CriticalWarning">Correct the declaration of 'NativeMethods.BackuWrite(IntPtr, IntPtr, uint, out uint, bool, bool, ref IntPtr)' so that it correctly points to an existing entry point in 'kernel32'. The unmanaged entry point name currently linked to is BackuWrite.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Beep(System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.Beep(uint, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BeginUpdateResource(System.String,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.BeginUpdateResource(string, bool)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'pFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BuildCommDCB(System.String,WinAPI.DCB&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.BuildCommDCB(string, ref DCB)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.BuildCommDCB(string, ref DCB)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpDef' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BuildCommDCBAndTimeouts(System.String,WinAPI.DCB&amp;,WinAPI.COMMTIMEOUTS&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.BuildCommDCBAndTimeouts(string, ref DCB, ref COMMTIMEOUTS)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.BuildCommDCBAndTimeouts(string, ref DCB, ref COMMTIMEOUTS)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpDef' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CallNamedPipe(System.String,System.Byte[],System.UInt32,System.Byte[],System.UInt32,System.UInt32&amp;,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CallNamedPipe(string, byte[], uint, byte[], uint, out uint, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CallNamedPipe(string, byte[], uint, byte[], uint, out uint, uint)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpNamedPipeName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CancelWaitableTimer(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CancelWaitableTimer(IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CancelWaitableTimer(IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CloseHandle(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CloseHandle(IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CommConfigDialog(System.String,System.IntPtr,WinAPI.COMMCONFIG&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CommConfigDialog(string, IntPtr, ref COMMCONFIG)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CommConfigDialog(string, IntPtr, ref COMMCONFIG)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpszName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CompareFileTime(WinAPI.FILETIME&amp;,WinAPI.FILETIME&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CompareFileTime(ref FILETIME, ref FILETIME)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CompareString(System.UInt32,System.UInt32,System.String,System.Int32,System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CompareString(uint, uint, string, int, string, int)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpString1' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="4" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpString2' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message TypeName="UseManagedEquivalentsOfWin32Api" Category="Microsoft.Usage" CheckId="CA2205" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="PlatformInvokeDeclaration" Certainty="50" Level="Error">Remove the declaration for 'NativeMethods.CompareString(uint, uint, string, int, string, int)'. Callers should use the following managed alternative: System.String.Compare</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConnectNamedPipe(System.IntPtr,System.Threading.NativeOverlapped&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.ConnectNamedPipe(IntPtr, ref NativeOverlapped)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.ConnectNamedPipe(IntPtr, ref NativeOverlapped)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ContinueDebugEvent(System.UInt32,System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.ContinueDebugEvent(uint, uint, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.ContinueDebugEvent(uint, uint, uint)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConvertDefaultLocale(System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.ConvertDefaultLocale(uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConvertThreadToFiber(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.ConvertThreadToFiber(IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CopyFile(System.String,System.String,System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CopyFile(string, string, bool)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bFailIfExists' of P/Invoke 'NativeMethods.CopyFile(string, string, bool)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CopyFile(string, string, bool)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpExistingFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpNewFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CopyFileEx(System.String,System.String,WinAPI.CopyProgressRoutine,System.IntPtr,System.Int32&amp;,WinAPI.CopyFileFlags)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CopyFileEx(string, string, CopyProgressRoutine, IntPtr, ref int, CopyFileFlags)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CopyFileEx(string, string, CopyProgressRoutine, IntPtr, ref int, CopyFileFlags)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpExistingFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpNewFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateConsoleScreenBuffer(System.UInt32,System.UInt32,System.IntPtr,System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateConsoleScreenBuffer(uint, uint, IntPtr, uint, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="4" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'screenBufferData' of P/Invoke 'NativeMethods.CreateConsoleScreenBuffer(uint, uint, IntPtr, uint, uint)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'uint'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateDirectory(System.String,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateDirectory(string, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CreateDirectory(string, IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpPathName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateDirectory(System.String,System.String,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateDirectory(string, string, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CreateDirectory(string, string, IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpTemplateDirectory' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpNewDirectory' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateEvent(System.IntPtr,System.Boolean,System.Boolean,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateEvent(IntPtr, bool, bool, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bInitialState' of P/Invoke 'NativeMethods.CreateEvent(IntPtr, bool, bool, string)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bManualReset' of P/Invoke 'NativeMethods.CreateEvent(IntPtr, bool, bool, string)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFiber(System.UInt32,System.Delegate,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateFiber(uint, Delegate, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="0" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'dwStackSize' of P/Invoke 'NativeMethods.CreateFiber(uint, Delegate, IntPtr)' will be 4 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'uint'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateFileMapping(System.IntPtr,System.IntPtr,WinAPI.FileMapProtection,System.UInt32,System.UInt32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateFileMapping(IntPtr, IntPtr, FileMapProtection, uint, uint, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateHardLink(System.String,System.String,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateHardLink(string, string, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CreateHardLink(string, string, IntPtr)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpExistingFileName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateIoCompletionPort(System.IntPtr,System.IntPtr,System.UIntPtr,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateIoCompletionPort(IntPtr, IntPtr, UIntPtr, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateJobObject(WinAPI.SECURITY_ATTRIBUTES&amp;,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateJobObject(ref SECURITY_ATTRIBUTES, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateMailslot(System.String,System.UInt32,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateMailslot(string, uint, uint, IntPtr)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateMutex(System.IntPtr,System.Boolean,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateMutex(IntPtr, bool, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bInitialOwner' of P/Invoke 'NativeMethods.CreateMutex(IntPtr, bool, string)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateNamedPipe(System.String,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,WinAPI.SECURITY_ATTRIBUTES)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateNamedPipe(string, uint, uint, uint, uint, uint, uint, SECURITY_ATTRIBUTES)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="7" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'lpSecurityAttributes' of P/Invoke 'NativeMethods.CreateNamedPipe(string, uint, uint, uint, uint, uint, uint, SECURITY_ATTRIBUTES)' will be 12 bytes wide on 32-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 4 bytes wide on 32-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'SECURITY_ATTRIBUTES'.</Issue>
+             <Issue Name="Parameter" Certainty="95" Level="Error">As it is declared in your code, parameter 'lpSecurityAttributes' of P/Invoke 'NativeMethods.CreateNamedPipe(string, uint, uint, uint, uint, uint, uint, SECURITY_ATTRIBUTES)' will be 16 bytes wide on 64-bit platforms. This is not correct, as the actual native declaration of this API indicates it should be 8 bytes wide on 64-bit platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of 'SECURITY_ATTRIBUTES'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreatePipe(System.IntPtr&amp;,System.IntPtr&amp;,WinAPI.SECURITY_ATTRIBUTES&amp;,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreatePipe(out IntPtr, out IntPtr, ref SECURITY_ATTRIBUTES, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CreatePipe(out IntPtr, out IntPtr, ref SECURITY_ATTRIBUTES, uint)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateProcess(System.String,System.String,WinAPI.SECURITY_ATTRIBUTES&amp;,WinAPI.SECURITY_ATTRIBUTES&amp;,System.Boolean,System.UInt32,System.IntPtr,System.String,WinAPI.STARTUPINFO&amp;,WinAPI.PROCESS_INFORMATION&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateProcess(string, string, ref SECURITY_ATTRIBUTES, ref SECURITY_ATTRIBUTES, bool, uint, IntPtr, string, ref STARTUPINFO, out PROCESS_INFORMATION)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Warning">Add the MarshalAsAttribute to parameter 'bInheritHandles' of P/Invoke 'NativeMethods.CreateProcess(string, string, ref SECURITY_ATTRIBUTES, ref SECURITY_ATTRIBUTES, bool, uint, IntPtr, string, ref STARTUPINFO, out PROCESS_INFORMATION)'. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+             <Issue Name="Return" Certainty="95" Level="Warning">Add the MarshalAsAttribute to the return type of P/Invoke 'NativeMethods.CreateProcess(string, string, ref SECURITY_ATTRIBUTES, ref SECURITY_ATTRIBUTES, bool, uint, IntPtr, string, ref STARTUPINFO, out PROCESS_INFORMATION)'. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpApplicationName' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpCommandLine' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+            <Message Id="7" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'lpCurrentDirectory' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateSemaphore(WinAPI.SECURITY_ATTRIBUTES&amp;,System.Int32,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateSemaphore(ref SECURITY_ATTRIBUTES, int, int, string)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'name' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateTapePartition(System.IntPtr,System.UInt32,System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2014-08-26 18:18:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">'NativeMethods.CreateTapePartition(IntPtr, uint, uint, uint)' appears to have no upstream public or protected callers.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeCompoundWord">The discrete term '{0}' in member name {1} should be expressed as a compound word, '{2}'.</Resolution>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028">
+   <Name>Enum storage should be Int32</Name>
+   <Description>There is little or no benefit to using a type smaller than Int32. You might require a type that is larger than Int32 if: 1) the enumeration values are flags and there are or will be many (&amp;amp;gt;32) values, or 2) the type needs to be different from Int32 for backward compatibility. Avoid using an underlying type that is not integral.</Description>
+   <Resolution Name="NotInt32">If possible, make the underlying type of {0} System.Int32 instead of {1}.</Resolution>
+   <Resolution Name="NotIntegral">If possible, make the underlying type of {0} Int32 instead of {1}. Otherwise consider Byte, Int16, or Int64.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182147(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008">
+   <Name>Enums should have zero value</Name>
+   <Description>An enum should generally have a zero value. If the enum is not decorated with the Flags attribute, it should have a member with a value of zero that represents the empty state. Optionally, this value is named 'None'. For a Flags-attributed enum, a zero-valued member is optional and, if it exists, should always be named 'None'. This value should indicate that no values have been set in the enum. Using a zero-valued member for other purposes is contrary to the use of the Flags attribute in that the bitwise AND and OR operators are useless with the member.</Description>
+   <Resolution Name="NotFlagsNoZeroValue">Add a member to {0} that has a value of zero with a suggested name of 'None'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182149(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="FlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1714">
+   <Name>Flags enums should have plural names</Name>
+   <Description>An enumeration marked with FlagsAttribute should have a plural name.</Description>
+   <Resolution Name="Default">If enumeration name {0} is singular, change it to a plural form.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264486(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Assembly">Correct the casing of '{0}' in assembly name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   <Resolution Name="Type">Remove the underscores from type name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="InitializeValueTypeStaticFieldsInline" Category="Microsoft.Usage" CheckId="CA2207">
+   <Name>Initialize value type static fields inline</Name>
+   <Description>Do not declare explicit static constructors on value types. Initializing static data in explicit static constructors results in a value type that is not marked in metadata as 'beforefieldinit'. In this case, the static constructor is not always guaranteed to be called before instance members on the value type are called.</Description>
+   <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182346(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkBooleanPInvokeArgumentsWithMarshalAs" Category="Microsoft.Interoperability" CheckId="CA1414">
+   <Name>Mark boolean P/Invoke arguments with MarshalAs</Name>
+   <Description>All boolean P/Invoke parameters and return types should be explicitly marked with the MarshalAs attribute. By default, the system will marshal all booleans as 4-byte UnmanagedType.Bool. This is the correct behavior for Win32 'BOOL' arguments but incorrect for C++ 'bool' arguments, which should be marshaled as 1-byte UnmanagedType.U1. For code maintainability reasons, always explicitly specify the marshaling information for boolean arguments and return values.</Description>
+   <Resolution Name="Default">Add the MarshalAsAttribute to parameter {0} of P/Invoke {1}. If the corresponding unmanaged parameter is a 4-byte Win32 'BOOL', use [MarshalAs(UnmanagedType.Bool)]. For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Resolution>
+   <Resolution Name="Return">Add the MarshalAsAttribute to the return type of P/Invoke {0}. If the corresponding unmanaged return type is a 4-byte Win32 'BOOL', use MarshalAs(UnmanagedType.Bool). For a 1-byte C++ 'bool', use MarshalAs(UnmanagedType.U1).</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182206(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717">
+   <Name>Only FlagsAttribute enums should have plural names</Name>
+   <Description>Plural names indicate that the values of the enumeration can be combined. For example, an enumeration named 'Day' indicates a single day, and an enumeration named 'Days' indicates multiple days. Enumeration values should be combined using the bit-wise OR operator only if the Flags attribute is present on the enumeration.</Description>
+   <Resolution Name="Default">If the name {0} is plural, change it to its singular form.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264487(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815">
+   <Name>Override equals and operator equals on value types</Name>
+   <Description>The default System.ValueType implementation might not perform as well as a custom implementation.</Description>
+   <Resolution Name="Equals">{0} should override Equals.</Resolution>
+   <Resolution Name="op_Equality">{0} should override the equality (==) and inequality (!=) operators.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182276(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke declarations should be portable</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">As it is declared in your code, parameter {0} of P/Invoke {1} will be {2} bytes wide on {3} platforms. This is not correct, as the actual native declaration of this API indicates it should be {4} bytes wide on {3} platforms. Consult the MSDN Platform SDK documentation for help determining what data type should be used instead of {5}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeEntryPointsShouldExist" Category="Microsoft.Interoperability" CheckId="CA1400">
+   <Name>P/Invoke entry points should exist</Name>
+   <Description>Methods decorated with the DllImport attribute should point to existing unmanaged entry points. There is no compile-time check to ensure that methods decorated with the DllImport attribute actually exist in the referenced unmanaged dll. In the event that an entry point does not exist or the specified argument list is not correct, a runtime exception will be generated.</Description>
+   <Resolution Name="Default">Correct the declaration of {0} so that it correctly points to an existing entry point in {1}. The unmanaged entry point name currently linked to is {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182208(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalWarning</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111">
+   <Name>Pointers should not be visible</Name>
+   <Description>IntPtr and UIntPtr fields should be declared as private. Exposing non-private pointers can cause a security weakness.</Description>
+   <Resolution Name="Default">Make {0} private.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182306(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Specify marshaling for P/Invoke string arguments</Name>
+   <Description>When marshaling strings as ANSI (or as Auto on Win9x), some characters may be changed. If best-fit mapping is on, strings that appear different in Unicode will be marshaled to identical ANSI strings, which may lead to incorrect security decisions. Turning best-fit mapping off reduces this risk, as all characters without equivalents are mapped to '?'. Also, note that CharSet.Ansi is the default setting for all string marshaling; Unicode marshaling must be specified explicitly, either as a CharSet setting of DllImport or StructLayout, or as a MarshalAs attribute with a Unicode (or system-dependent) UnmanagedType.</Description>
+   <Resolution Name="Parameter">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053">
+   <Name>Static holder types should not have constructors</Name>
+   <Description>Instances of types that define only static members do not need to be created. Many compilers will automatically add a public default constructor if no constructor is specified. To prevent this, adding an empty private constructor may be required.</Description>
+   <Resolution Name="Default">Because type {0} contains only 'static' ('Shared' in Visual Basic) members, add a default private constructor to prevent the compiler from adding a default public constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182169(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseManagedEquivalentsOfWin32Api" Category="Microsoft.Usage" CheckId="CA2205">
+   <Name>Use managed equivalents of Win32 API</Name>
+   <Description>Use managed equivalents to Win32 API whenever possible.</Description>
+   <Resolution Name="PlatformInvokeDeclaration">Remove the declaration for {0}. Callers should use the following managed alternative: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182365(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="TypeNoAlternate">Replace the term '{0}' in type name {1} with an appropriate alternate or remove it entirely.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

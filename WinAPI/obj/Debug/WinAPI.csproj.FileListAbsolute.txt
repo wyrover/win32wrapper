@@ -1,0 +1,10 @@
+Z:\Documents\Coding Projects\WinAPI\WinAPI\bin\Debug\WinAPI.pdb
+Z:\Documents\Coding Projects\WinAPI\WinAPI\obj\Debug\WinAPI.pdb
+Z:\Documents\Coding Projects\WinAPI\WinAPI\bin\Debug\WinAPI.exe
+Z:\Documents\Coding Projects\WinAPI\WinAPI\obj\Debug\WinAPI.exe
+Z:\Documents\Coding Projects\WinAPI\WinAPI\obj\Debug\WinAPI.csprojResolveAssemblyReference.cache
+Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\obj\Debug\WinAPI.csprojResolveAssemblyReference.cache
+Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\obj\Debug\WinAPI.exe
+Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\obj\Debug\WinAPI.pdb
+Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\bin\Debug\WinAPI.exe
+Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\bin\Debug\WinAPI.pdb
