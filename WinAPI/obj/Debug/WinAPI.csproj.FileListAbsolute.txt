@@ -8,3 +8,8 @@ Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\obj\Debug\WinAPI.exe
 Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\obj\Debug\WinAPI.pdb
 Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\bin\Debug\WinAPI.exe
 Z:\Programming Projects\SharpDevelop Projects\WinAPI\WinAPI\bin\Debug\WinAPI.pdb
+C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\obj\Debug\WinAPI.csprojResolveAssemblyReference.cache
+C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\bin\Debug\Win32Wrapper.exe
+C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\bin\Debug\Win32Wrapper.pdb
+C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\obj\Debug\Win32Wrapper.exe
+C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\obj\Debug\Win32Wrapper.pdb

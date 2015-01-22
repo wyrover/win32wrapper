@@ -6,7 +6,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	public enum ERRORS
 	{

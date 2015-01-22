@@ -9,7 +9,7 @@
  using System;
  using System.Runtime.InteropServices;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
 	struct STARTUPINFO

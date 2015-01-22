@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	public enum DriveType : uint
 	{

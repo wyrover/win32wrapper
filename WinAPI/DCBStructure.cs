@@ -10,7 +10,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Collections.Specialized;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	[StructLayout(LayoutKind.Sequential)]
 	public struct DCB

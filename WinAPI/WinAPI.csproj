@@ -5,8 +5,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WinAPI</RootNamespace>
-    <AssemblyName>WinAPI</AssemblyName>
+    <RootNamespace>Win32Wrapper</RootNamespace>
+    <AssemblyName>Win32Wrapper</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -81,9 +81,11 @@
     <Compile Include="GET_FILEEX_INFO_LEVELSEnum.cs" />
     <Compile Include="HEAPENTRY32Struct.cs" />
     <Compile Include="KernelNativeMethods.cs" />
+    <Compile Include="LoadLibraryFlagsEnum.cs" />
     <Compile Include="MEMORYSTATUSEXStruct.cs" />
     <Compile Include="OSVERSIONINFOStruct.cs" />
     <Compile Include="ParityEnum.cs" />
+    <Compile Include="ProcessorFeatureEnum.cs" />
     <Compile Include="PROCESS_INFORMATION.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

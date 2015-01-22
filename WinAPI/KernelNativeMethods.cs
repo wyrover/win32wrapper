@@ -8,10 +8,11 @@
  */
 using System;
 using System.Runtime.InteropServices;
+using System.Text;
 
-using WinAPI;
+using Win32Wrapper;
 
-namespace WinAPI.Kernel
+namespace Win32Wrapper.Kernel
 {
 	internal class NativeMethods
 	{
@@ -70,7 +71,7 @@ namespace WinAPI.Kernel
 		public static extern bool CommConfigDialog( string lpszName, IntPtr hwnd, ref COMMCONFIG lpcc);
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
-		public static extern int CompareFileTime( [In] ref WinAPI.FILETIME lpFileTime1, [In] ref WinAPI.FILETIME lpFileTime2);
+		public static extern int CompareFileTime( [In] ref Win32Wrapper.FILETIME lpFileTime1, [In] ref Win32Wrapper.FILETIME lpFileTime2);
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern int CompareString( uint Locale, uint dwCmpFlags, string lpString1, int cchCount1, string lpString2, int cchCount2);
@@ -768,5 +769,54 @@ namespace WinAPI.Kernel
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern int InterlockedIncrement(ref int lpAddend);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsBadCodePtr(IntPtr lpfn);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsBadReadPtr(IntPtr lp, uint ucb);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsBadStringPtr(string lpsz, uint ucchMax);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsBadWritePtr(IntPtr lp, uint ucb);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsDBCSLeadByte(byte TestChar);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsDBCDLeadByteEx(uint CodePage, byte TestChar);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsDebuggerPresent();
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsProcessorFeaturePresent(ProcessorFeature processorFeature);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsValidCodePage(uint CodePage);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool IsValidLocale( uint Locale, uint dwFlags);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern int LCMapString(uint Locale, uint dwMapFlags, string lpSrcStr, int cchSrc, [Out] StringBuilder lpDestStr, int cchDest);
+		
+		//Need to create Critical_section structure. hard to find
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern void LeaveCriticalSection(ref CRITICAL_SECTION lpCriticalSection);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr LoadLibrary(string lpFileName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr LoadLibraryEx(string lpFileName, IntPtr hReservedNull, LoadLibraryFlags dwFlags);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint LoadModule(string lpModuleName, IntPtr lpParameterBlock);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr LoadResource(IntPtr hModule, IntPtr hResInfo);
 	}
 }

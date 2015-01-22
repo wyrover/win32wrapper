@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	public enum GET_FILEEX_INFO_LEVELS
 	{

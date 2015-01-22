@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	[Flags]
 	public enum FileMapProtection : uint

@@ -7,9 +7,9 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
-using WinAPI.Kernel;
+using Win32Wrapper.Kernel;
 
-namespace WinAPI
+namespace Win32Wrapper
 {
 	/// <summary>
 	/// Description of Program.
