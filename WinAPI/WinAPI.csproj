@@ -73,6 +73,7 @@
     <Compile Include="DriveTypeEnum.cs" />
     <Compile Include="DtrControlEnum.cs" />
     <Compile Include="ERRORS.cs" />
+    <Compile Include="FileMapAccessEnum.cs" />
     <Compile Include="FileMapProtectionEnum.cs" />
     <Compile Include="FILETIME.cs" />
     <Compile Include="FileTypeEnum.cs" />
@@ -83,6 +84,9 @@
     <Compile Include="KernelNativeMethods.cs" />
     <Compile Include="LoadLibraryFlagsEnum.cs" />
     <Compile Include="MEMORYSTATUSEXStruct.cs" />
+    <Compile Include="ModuleEntry32Struct.cs" />
+    <Compile Include="MoveFileFlagsEnum.cs" />
+    <Compile Include="OfStructStruct.cs" />
     <Compile Include="OSVERSIONINFOStruct.cs" />
     <Compile Include="ParityEnum.cs" />
     <Compile Include="ProcessorFeatureEnum.cs" />
