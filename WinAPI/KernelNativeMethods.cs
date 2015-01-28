@@ -915,5 +915,77 @@ namespace Win32Wrapper.Kernel
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern IntPtr OpenMutex(uint dwDesiredAccess, bool bInheritHandle, string lpName);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern IntPtr OpenProcess(ProcessAccessFlags processAccess, bool bInheritHandle, int processId);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr OpenSemaphore(uint dwDesiredAccess, bool bInheritHandle, string lpName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr OpenWaitableTimer(uint dwDesiredAccess, bool bInheritHandle, string lpTimerName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void OutputDebugString(string lpOutputString);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool PeekConsoleInput(IntPtr hConsoleInput, [MarshalAs(UnmanagedType.LPArray), Out] INPUT_RECORD[] lpBuffer, DWORD nLength, out DWORD lpNumberOfEventsRead);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool PostQueuedCompletionStatus(IntPtr CompletionPort, uint dwNumberOfBytesTransferred, UIntPtr dwCompletionKey, [In] ref System.Threading.NativeOverlapped lpOverlapped);
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint PrepareTape(IntPtr hDevice, uint dwOperation, bool bImmediate);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool Process32First(IntPtr hSnapshot, ref PROCESSENTRY32 lppe);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool Process32Next(IntPtr hSnapshot, ref PROCESSENTRY32 lppe);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool PulseEvent(IntPtr hEvent);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool PurgeComm(IntPtr hFile, uint dwFlags);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint QueryDosDevice(string lpDeviceName, IntPtr lpTargetPath, uint ucchMax);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool QueryInformationJobObject(IntPtr hJob, JOBOBJECTINFOCLASS JobObjectInformationClass, IntPtr lpJobObjectInfo, uint cbJobObjectInfoLength, IntPtr lpReturnLength);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool QueryPerformanceCounter(out long lpPerformanceCount);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool QueryPerformanceFrequency(out long frequency);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern uint QueueUserAPC(ApcDelegate pfnAPC, IntPtr hThread, UIntPtr dwData);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void RaiseException(uint dwExceptionCode, uint dwExceptionFlags, uint nNumberOfArguments, IntPtr lpArguments);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReadConsole(IntPtr hConsoleInput, [Out] StringBuilder lpBuffer, uint nNumberOfCharsToRead, out uint lpNumberOfCharsRead, IntPtr lpReserved);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool ReadConsoleInput(IntPtr hConsoleInput, [Out] INPUT_RECORD [] lpBuffer, uint nLength, out uint lpNumberOfEventsRead);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool ReadConsoleOutput
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReadConsoleOutputAttribute(IntPtr hConsoleOutput, [Out] ushort [] lpAttribute, uint nLength, COORD dwReadCoord, out uint lpNumberOfAttrsRead);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReadConsoleOutputCharacter(IntPtr hConsoleOutput, StringBuilder lpCharacter, uint nLength, COORD dwReadCoord, out uint lpNumberOfCharsRead);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReadFile(IntPtr hFile, [Out] byte[] lpBuffer, uint nNumberOfBytesToRead, out uint lpNumberOfBytesRead, IntPtr lpOverlapped);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool ReadFileEx(IntPtr hFile, [Out] byte [] lpBuffer, uint nNumberOfBytesToRead, [In] ref System.Threading.NativeOverlapped lpOverlapped, ReadFileCompletionDelegate lpCompletionRoutine);
 	}
 }

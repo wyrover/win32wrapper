@@ -89,6 +89,7 @@
     <Compile Include="OfStructStruct.cs" />
     <Compile Include="OSVERSIONINFOStruct.cs" />
     <Compile Include="ParityEnum.cs" />
+    <Compile Include="PROCESSENTRY32Struct.cs" />
     <Compile Include="ProcessorFeatureEnum.cs" />
     <Compile Include="PROCESS_INFORMATION.cs" />
     <Compile Include="Program.cs" />
