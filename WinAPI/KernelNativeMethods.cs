@@ -987,5 +987,122 @@ namespace Win32Wrapper.Kernel
 		
 //		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 //		public static extern bool ReadFileEx(IntPtr hFile, [Out] byte [] lpBuffer, uint nNumberOfBytesToRead, [In] ref System.Threading.NativeOverlapped lpOverlapped, ReadFileCompletionDelegate lpCompletionRoutine);
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReadFileScatter(IntPtr hFile, FILE_SEGMENT_ELEMENT[] aSegementArray, uint nNumberOfBytesToRead, IntPtr lpReserved, [In] ref System.Threading.NativeOverlapped lpOverlapped);
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReadProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, [Out] byte[] lpBuffer, int dwSize, out IntPtr lpNumberOfBytesRead);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReleaseMutex(IntPtr hMutex);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ReleaseSemaphore(IntPtr hSemaphore, int lReleaseCount, IntPtr lpPreviousCount);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool RemoveDirectory(string lpPathName);
+		
+		//can't find latency time struct
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool RequestWakeupLatency(LATENCY_TIME latency);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool ResetEvent(IntPtr hEvent);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint ResumeThread(IntPtr hThread);
+		
+		//no char info struct
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool ScrollConsoleScreenBuffer(IntPtr hConsoleOutput, [In] ref SMALL_RECT lpScrollRectangle, IntPtr lpClipRectangle, COORD dwDestinationOrigin, [In] ref CHAR_INFO lpFill);
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SearchPath (string lpPath, string lpFileName, string lpExtension, int nBufferLength, [MarshalAs ( UnmanagedType.LPTStr )] StringBuilder lpBuffer, out IntPtr lpFilePart );
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetCommConfig(IntPtr hCommDev, [In] ref COMMCONFIG lpCC, uint dwSize);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetCommMask(IntPtr hFile, uint dwEvtMask);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetCommState(IntPtr hFile, [In] ref DCB lpDCB);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetCommTimeouts(IntPtr hFile, [In] ref COMMTIMEOUTS lpCommTimeouts);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetComputerName(string lpComputerName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleActiveScreenBuffer(IntPtr hConsoleOutput);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleCP(uint wCodePageID);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleCtrlHandler(ConsoleCtrlDelegate HandlerRoutine, bool Add);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleCursorInfo(IntPtr hConsoleOutput, [In] ref CONSOLE_CURSOR_INFO lpConsoleCursorInfo);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleCursorPosition(IntPtr hConsoleOutput, COORD dwCursorPosition);
+		
+		//can't find consoleModes struct
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleOutputCP(uint wCodePageID);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleScreenBufferSize(IntPtr hConsoleOutput, COORD dwSize);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleTextAttribute(IntPtr hConsoleOutput, ushort wAttributes);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleTitle(string lpConsoleTitle);
+
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetConsoleWindowInfo(IntPtr hConsoleOutput, bool bAbsolute, [In] ref SMALL_RECT lpConsoleWindow);
+		
+		//no critical section struct
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern uint SetCriticalSectionSpinCount(ref CRITICAL_SECTION lpCriticalSection, uint dwSpinCount);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetCurrentDirectory(string lpPathName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetDefaultCommConfig(string lpszName, [In] ref COMMCONFIG lpCC, uint dwSize);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetEnvironmentVariable(string lpName, string lpValue);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern ErrorModes SetErrorMode(ErrorModes uMode);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetEvent(IntPtr hEvent);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void SetFileApisToANSI();
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void SetFileApisToOEM();
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetFileAttributes(string lpFileName, uint dwFileAttributes);
+		
+		//was originally unsafe
+		//no safefilehandle struct
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern uint SetFilePointer([In] SafeFileHandle hFile, [In] int lDistanceToMove, [Out] int* lpDistanceToMoveHigh, [In] EMoveMethod dwMoveMethod);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetFileTime(IntPtr hFile, ref long lpCreationTime, ref long lpLastAccessTime, ref long lpLastWriteTime);
 	}
-}
+} 

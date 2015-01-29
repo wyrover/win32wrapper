@@ -59,6 +59,8 @@
     <Compile Include="COMMCONFIG.cs" />
     <Compile Include="COMMPROPStruct.cs" />
     <Compile Include="COMMTIMEOUTS.cs" />
+    <Compile Include="ConsoleCtrDelegate.cs" />
+    <Compile Include="ConsoleModesEnum.cs" />
     <Compile Include="CONSOLE_CURSOR_INFOStruct.cs" />
     <Compile Include="CONSOLE_SCREEN_BUFFER_INFOStruct.cs" />
     <Compile Include="COORD.cs" />
@@ -72,11 +74,15 @@
     <Compile Include="DCBStructure.cs" />
     <Compile Include="DriveTypeEnum.cs" />
     <Compile Include="DtrControlEnum.cs" />
+    <Compile Include="EMoveMethodEnum.cs" />
+    <Compile Include="ErrorModesEnum.cs" />
     <Compile Include="ERRORS.cs" />
+    <Compile Include="FileAttributesEnum.cs" />
     <Compile Include="FileMapAccessEnum.cs" />
     <Compile Include="FileMapProtectionEnum.cs" />
     <Compile Include="FILETIME.cs" />
     <Compile Include="FileTypeEnum.cs" />
+    <Compile Include="FILE_SEGMENT_ELEMENTStruct.cs" />
     <Compile Include="FINDEX_INFO_LEVELSEnum.cs" />
     <Compile Include="FINDEX_SEARCH_OPSEnum.cs" />
     <Compile Include="GET_FILEEX_INFO_LEVELSEnum.cs" />
