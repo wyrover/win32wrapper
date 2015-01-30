@@ -1104,5 +1104,101 @@ namespace Win32Wrapper.Kernel
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern bool SetFileTime(IntPtr hFile, ref long lpCreationTime, ref long lpLastAccessTime, ref long lpLastWriteTime);
+		
+		//set handlecount doesn't exist on pinvoke.net
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern 
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetHandleInformation(IntPtr hObject, HANDLE_FLAGS dwMask, HANDLE_FLAGS dwFlags);
+		
+		//there are some extra structures that seem to relate to this
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetInformationJobObject(IntPtr hJob, JOBOBJECTINFOCLASS JobObjectInfoClass, IntPtr lpJobObjectInfo, uint cbJobObjectInfoLength);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void SetLastError(uint dwErrCode);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetLocalTime([In] ref SYSTEMTIME lpLocalTime);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetLocaleInfo(uint Locale, uint LCType, string lpLCData);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetMailslotInfo(IntPtr hMailslot, uint lReadTimeout);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetNamedPipeHandleState(IntPtr hNamedPipe, IntPtr lpMode, IntPtr lpMaxCollectionCount, IntPtr lpCollectDataTimeout);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetPriorityClass(IntPtr handle, PriorityClass priorityClass);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetProcessAffinityMask(IntPtr hProcess, UIntPtr dwProcessAffinityMask);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetProcessPriorityBoost(IntPtr hProcess, bool DisablePriorityBoost);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetProcessShutdownParameters(uint dwLevel, uint dwFlags);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetProcessWorkingSetSize(IntPtr hProcess, UIntPtr dwMinimumWorkingSetSize, UIntPtr dwMaximumWorkingSetSize);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetStdHandle(int nStdHandle, IntPtr hHandle);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetSystemPowerState(bool fSuspend, bool fForce);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetSystemTime(ref SYSTEMTIME time);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetSystemTimeAdjustment(uint dwTimeAdjustment, bool bTimeAdjustmentDisabled);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SetTapeParameters(IntPtr hDevice, uint dwOperation, IntPtr lpTapeInformation);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SetTapePosition(IntPtr hDevice, ETapePositionMethod dwPositionMethod, uint dwPartition, uint dwOffsetLow, uint dwOffsetHigh, bool bImmediate);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern UIntPtr SetThreadAffinityMask(IntPtr hThread, UIntPtr dwThreadAffinityMask);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool SetThreadContext(IntPtr hThread, [In] ref CONTEXT lpContext);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern EXECUTION_STATE SetThreadExecutionState(EXECUTION_STATE esFlags);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SetThreadIdealProcessor(IntPtr hThread, uint dwIdealProcessor);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetThreadLocale(uint Locale);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetThreadPriority(IntPtr hThread, ThreadPriority nPriority);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetThreadPriorityBoost(IntPtr hThread, bool DisablePriorityBoost);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetTimeZoneInformation([In] ref TIME_ZONE_INFORMATION lpTimeZoneInformation);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern FilterDelegate SetUnhandledExceptionFilter(FilterDelegate lpTopLevelExceptionFilter);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetVolumeLabel(string lpRootPathName, string lpVolumeName);
+		
+		//I mean really what the fuck is a delegate?
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool SetWaitableTimer(IntPtr hTimer, [In] ref long pDueTime, int lPeriod, TimerCompleteDelegate pfnCompletionRoutine, IntPtr lpArgToCompletionRoutine, bool fResume);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SetupComm(IntPtr hFile, uint dwInQueue, uint dwOutQueue);
 	}
 } 

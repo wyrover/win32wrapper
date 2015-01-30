@@ -56,6 +56,9 @@
   <ItemGroup>
     <Compile Include="BinaryTypeEnum.cs" />
     <Compile Include="BY_HANDLE_FILE_INFORMATIONStruct.cs" />
+    <Compile Include="ETapePositionMethodEnum.cs" />
+    <Compile Include="ExecutionStateEnum.cs" />
+    <Compile Include="HandleFlagsEnum.cs" />
     <Compile Include="COMMCONFIG.cs" />
     <Compile Include="COMMPROPStruct.cs" />
     <Compile Include="COMMTIMEOUTS.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="FINDEX_SEARCH_OPSEnum.cs" />
     <Compile Include="GET_FILEEX_INFO_LEVELSEnum.cs" />
     <Compile Include="HEAPENTRY32Struct.cs" />
+    <Compile Include="JobObjectInfoClassEnum.cs" />
     <Compile Include="KernelNativeMethods.cs" />
     <Compile Include="LoadLibraryFlagsEnum.cs" />
     <Compile Include="MEMORYSTATUSEXStruct.cs" />
@@ -95,6 +99,7 @@
     <Compile Include="OfStructStruct.cs" />
     <Compile Include="OSVERSIONINFOStruct.cs" />
     <Compile Include="ParityEnum.cs" />
+    <Compile Include="PriorityClassEnum.cs" />
     <Compile Include="PROCESSENTRY32Struct.cs" />
     <Compile Include="ProcessorFeatureEnum.cs" />
     <Compile Include="PROCESS_INFORMATION.cs" />

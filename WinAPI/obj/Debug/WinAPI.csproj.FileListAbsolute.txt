@@ -13,3 +13,8 @@ C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\bin\Debug\Win32Wrapper.exe
 C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\bin\Debug\Win32Wrapper.pdb
 C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\obj\Debug\Win32Wrapper.exe
 C:\Users\Taben Malik\Desktop\win32wrapper\WinAPI\obj\Debug\Win32Wrapper.pdb
+C:\Users\Number One\Desktop\win32wrapper\WinAPI\bin\Debug\Win32Wrapper.exe
+C:\Users\Number One\Desktop\win32wrapper\WinAPI\bin\Debug\Win32Wrapper.pdb
+C:\Users\Number One\Desktop\win32wrapper\WinAPI\obj\Debug\WinAPI.csprojResolveAssemblyReference.cache
+C:\Users\Number One\Desktop\win32wrapper\WinAPI\obj\Debug\Win32Wrapper.exe
+C:\Users\Number One\Desktop\win32wrapper\WinAPI\obj\Debug\Win32Wrapper.pdb
