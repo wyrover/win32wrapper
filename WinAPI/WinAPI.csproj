@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllocationTypeEnum.cs" />
     <Compile Include="BinaryTypeEnum.cs" />
     <Compile Include="BY_HANDLE_FILE_INFORMATIONStruct.cs" />
     <Compile Include="ETapePositionMethodEnum.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="JobObjectInfoClassEnum.cs" />
     <Compile Include="KernelNativeMethods.cs" />
     <Compile Include="LoadLibraryFlagsEnum.cs" />
+    <Compile Include="MemoryProtectionEnum.cs" />
     <Compile Include="MEMORYSTATUSEXStruct.cs" />
     <Compile Include="ModuleEntry32Struct.cs" />
     <Compile Include="MoveFileFlagsEnum.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="SYSTEMTIMEStruct.cs" />
     <Compile Include="SYSTEM_INFOStruct.cs" />
     <Compile Include="SYSTEM_POWER_STATUSStruct.cs" />
+    <Compile Include="ThreadEntry32Struct.cs" />
     <Compile Include="ThreadPriorityEnum.cs" />
     <Compile Include="TIME_ZONE_INFORMATIONStruct.cs" />
     <Compile Include="WIN32_FIND_DATAStruct.cs" />

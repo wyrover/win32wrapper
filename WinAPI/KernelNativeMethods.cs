@@ -1200,5 +1200,114 @@ namespace Win32Wrapper.Kernel
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern bool SetupComm(IntPtr hFile, uint dwInQueue, uint dwOutQueue);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SignalObjectAndWait(IntPtr hObjectToSignal, IntPtr hObjectToWaitOn, uint dwMilliseconds, bool bAlertable);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SizeofResource(IntPtr hModule, IntPtr hResInfo);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void Sleep(uint dwMilliseconds);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint SleepEx(uint dwMilliseconds, bool bAlertable);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern int SuspendThread(IntPtr hThread);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern void SwitchToFiber(IntPtr lpFiber);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SwitchToThread();
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SystemTimeToFileTime([In] IntPtr lpSystemTime, IntPtr lpFileTime);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool SystemTimeToTzSpecificLocalTime(IntPtr lpTimeZoneInformation, [In] ref SYSTEMTIME lpUniversalTime, out SYSTEMTIME lpLocalTime);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TerminateJobObject(IntPtr hJob, uint uExitCode);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TerminateProcess(IntPtr hProcess, uint uExitCode);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TerminateThread(IntPtr hThread, uint dwExitCode);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool Thread32First(IntPtr hSnapshot, ref THREADENTRY32 lpte);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool Thread32Next(IntPtr hSnapshot, out THREADENTRY32 lpte);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint TlsAlloc();
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TlsFree(uint dwTlsIndex);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr TlsGetValue(uint dwTlsIndex);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TlsSetValue(uint dwTlsIndex, IntPtr lpTlsValue);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool Toolhelp32ReadProcessMemory(uint th32ProcessID, IntPtr lpBaseAddress, [Out] byte [] lpBuffer, UIntPtr cbRead, IntPtr lpNumberOfBytesRead);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TransactNamedPipe(IntPtr hNamedPipe, byte [] lpInBuffer, uint nInBufferSize, [Out] byte [] lpOutBuffer, uint nOutBufferSize, IntPtr lpBytesRead, IntPtr lpOverlapped);
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool TransmitCommChar(IntPtr hFile, char cChar);
+		
+		//still don't have the critical section struct
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool TryEnterCriticalSection(ref CRITICAL_SECTION lpCriticalSection);
+		
+		//need exception pointers
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern int UnhandledExceptionFilter([In] ref EXCEPTION_POINTERS ExceptionInfo);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool UnlockFile(IntPtr hFile, uint dwFileOffsetLow, uint dwFileOffsetHigh, uint nNumberOfBytesToUnlockLow, uint nNumberOfBytesToUnlockHigh);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool UnlockFileEx(IntPtr hFile, uint dwReserved, uint nNumberOfBytesToUnlockLow, uint nNumberOfBytesToUnlockHigh, [In] ref System.Threading.NativeOverlapped lpOverlapped);
+	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool UnmapViewOfFile(IntPtr lpBaseAddress);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool UpdateResource(IntPtr hUpdate, string lpType, string lpName, ushort wLanguage, IntPtr lpData, uint cbData);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint VerLanguageName(uint wLang, [Out] StringBuilder szLang, uint wSize);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern UIntPtr VirtualAlloc(UIntPtr lpAddress, UIntPtr dwSize, AllocationType flAllocationType, MemoryProtection flProtect);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern IntPtr VirtualAllocEx(IntPtr hProcess, IntPtr lpAddress, uint dwSize, AllocationType flAllocationType, MemoryProtection flProtect);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool VirtualFree(UIntPtr lpAddress, UIntPtr dwSize, uint dwFreeType);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool VirtualFreeEx(IntPtr hProcess, IntPtr lpAddress, int dwSize, FreeType dwFreeType);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool VirtualLock(IntPtr lpAddress, UIntPtr dwSize);
+		
+		//File Protection enum associated with this
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool VirtualProtect(IntPtr lpAddress, uint dwSize, uint flNewProtect, out uint lpflOldProtect);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect);
+	
 	}
 } 
