@@ -94,6 +94,7 @@
     <Compile Include="JobObjectInfoClassEnum.cs" />
     <Compile Include="KernelNativeMethods.cs" />
     <Compile Include="LoadLibraryFlagsEnum.cs" />
+    <Compile Include="MemoryBasicInformationStruct.cs" />
     <Compile Include="MemoryProtectionEnum.cs" />
     <Compile Include="MEMORYSTATUSEXStruct.cs" />
     <Compile Include="ModuleEntry32Struct.cs" />

@@ -1308,6 +1308,43 @@ namespace Win32Wrapper.Kernel
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern bool VirtualProtectEx(IntPtr hProcess, IntPtr lpAddress, UIntPtr dwSize, uint flNewProtect, out uint lpflOldProtect);
+		
+		//there were some other structs
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern int VirtualQuery(ref UIntPtr lpAddress, ref MEMORY_BASIC_INFORMATION lpBuffer, int dwLength);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern int VirtualQueryEx(IntPtr hProcess, IntPtr lpAddress, out MEMORY_BASIC_INFORMATION lpBuffer, uint dwLength);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool VirtualUnlock(IntPtr lpAddress, UIntPtr dwSize);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WaitCommEvent(IntPtr hFile, out uint lpEvtMask, IntPtr lpOverlapped);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool WaitForDebugEvent( [In] ref DEBUG_EVENT lpDebugEvent, uint dwMilliseconds );
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint WaitForMultipleObjects(uint nCount, IntPtr [] lpHandles, bool bWaitAll, uint dwMilliseconds);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint WaitForMultipleObjectsEx(uint nCount, IntPtr [] lpHandles, bool bWaitAll, uint dwMilliseconds, bool bAlertable);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern UInt32 WaitForSingleObject(IntPtr hHandle, UInt32 dwMilliseconds);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint WaitForSingleObjectEx(IntPtr hHandle, uint dwMilliseconds, bool bAlertable);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WaitNamedPipe(string lpNamedPipeName, uint nTimeOut);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern int WideCharToMultiByte(uint CodePage, uint dwFlags, [MarshalAs(UnmanagedType.LPWStr)] string lpWideCharStr, int cchWideChar, [MarshalAs(UnmanagedType.LPArray)] Byte[] lpMultiByteStr, int cbMultiByte, IntPtr lpDefaultChar, out bool lpUsedDefaultChar);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint WinExec(string lpCmdLine, uint uCmdShow);
 	
 	}
 } 
