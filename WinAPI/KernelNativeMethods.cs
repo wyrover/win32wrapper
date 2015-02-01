@@ -1345,6 +1345,50 @@ namespace Win32Wrapper.Kernel
 		
 		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
 		public static extern uint WinExec(string lpCmdLine, uint uCmdShow);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteConsole(IntPtr hConsoleOutput, string lpBuffer, uint nNumberOfCharsToWrite, out uint lpNumberOfCharsWritten, IntPtr lpReserved);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool WriteConsoleInput(IntPtr hConsoleInput, [MarshalAs(UnmanagedType.LPArray), In] INPUT_RECORD[] lpBuffer, DWORD nLength, out DWORD lpNumberOfEventsWritten);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool WriteConsoleOutput(SafeConsoleHandle hConsoleOutput, [MarshalAs(UnmanagedType.LPArray), In] CHAR_INFO[,] lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, ref SMALL_RECT lpWriteRegion);
 	
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteConsoleOutputAttribute(IntPtr hConsoleOutput, ushort [] lpAttribute, uint nLength, COORD dwWriteCoord, out uint lpNumberOfAttrsWritten);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteConsoleOutputCharacter(IntPtr hConsoleOutput, StringBuilder lpCharacter, uint nLength, COORD dwWriteCoord, out uint lpNumberOfCharsWritten);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteFile(IntPtr hFile, byte [] lpBuffer, uint nNumberOfBytesToWrite, out uint lpNumberOfBytesWritten, [In] ref System.Threading.NativeOverlapped lpOverlapped);
+		
+//		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+//		public static extern bool WriteFileEx(IntPtr hFile, byte [] lpBuffer, uint nNumberOfBytesToWrite, [In] ref System.Threading.NativeOverlapped lpOverlapped, WriteFileCompletionDelegate lpCompletionRoutine);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteFileGather(IntPtr hFile, [Out] FILE_SEGMENT_ELEMENT [] aSegmentArray, uint nNumberOfBytesToWrite, IntPtr lpReserved, [In] ref System.Threading.NativeOverlapped lpOverlapped);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WritePrivateProfileSection(string lpAppName, string lpString, string lpFileName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WritePrivateProfileString(string lpAppName, string lpKeyName, string lpString, string lpFileName);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WritePrivateProfileStruct(string lpszSection, string lpszKey, IntPtr lpStruct, uint uSizeStruct, string szFile);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteProcessMemory(IntPtr hProcess, IntPtr lpBaseAddress, byte[] lpBuffer, int nSize, out IntPtr lpNumberOfBytesWritten);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteProfileSection(string lpAppName, string lpString);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern bool WriteProfileString(string lpAppName, string lpKeyName, string lpString);
+		
+		[DllImport("kernel32", CharSet = CharSet.Auto, SetLastError = true)]
+		public static extern uint WriteTapemark(IntPtr hDevice, uint dwTapemarkType, uint dwTapemarkCount, bool bImmediate);
 	}
 } 
