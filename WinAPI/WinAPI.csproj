@@ -92,6 +92,7 @@
     <Compile Include="GET_FILEEX_INFO_LEVELSEnum.cs" />
     <Compile Include="HEAPENTRY32Struct.cs" />
     <Compile Include="JobObjectInfoClassEnum.cs" />
+    <Compile Include="KernelMethods.cs" />
     <Compile Include="KernelNativeMethods.cs" />
     <Compile Include="LoadLibraryFlagsEnum.cs" />
     <Compile Include="MemoryBasicInformationStruct.cs" />
